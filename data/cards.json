@@ -1,0 +1,18 @@
+[
+    {
+        "image": "../assets/headman.png",
+        "name": "headman"
+    },
+    {
+        "image": "../assets/reaper.png",
+        "name": "reaper"
+    },
+    {
+        "image": "../assets/repo_head.png",
+        "name": "repo_head"
+    },
+    {
+        "image": "../assets/robe.png",
+        "name": "robe"
+    }  
+]
