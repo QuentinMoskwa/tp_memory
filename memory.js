@@ -17,7 +17,6 @@ cards = [
 
 cards = cards.concat(cards);
 
-
 function shuffleCards() {
   let currentIndex = cards.length,
     randomIndex,
@@ -30,8 +29,6 @@ function shuffleCards() {
     cards[randomIndex] = temporaryValue;
   }
 }
-
-
 
 function generateCards() {
     for (let card of cards) {
@@ -49,7 +46,6 @@ function generateCards() {
     }
 }
 
-
 function flipCard() {
     if (this === firstReturnedCard) return;
 
@@ -59,25 +55,28 @@ function flipCard() {
         firstReturnedCard = this;
         return;
     }
-
     secondReturnedCard = this;
-
     checkForMatch();
 }
 
 function checkForMatch() {
-    let isMatch = firstCard.dataset.name === secondCard.dataset.name;
+    let isMatch = firstReturnedCard.dataset.name === secondReturnedCard.dataset.name;
     
     if(isMatch) {
-    firstReturnedCard.removeEventListener("click", flipCard);
-    secondReturnedCard.removeEventListener("click", flipCard);
+        firstReturnedCard.removeEventListener("click", flipCard);
+        secondReturnedCard.removeEventListener("click", flipCard);
+        firstReturnedCard = null;
+        secondReturnedCard = null;
     }
     else {
         setTimeout(() => {
         firstReturnedCard.classList.remove("flipped");
         secondReturnedCard.classList.remove("flipped");
+        firstReturnedCard = null;
+        secondReturnedCard = null;
         }, 1000);
     }
+
 }
 
 
