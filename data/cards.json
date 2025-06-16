@@ -14,5 +14,21 @@
     {
         "image": "../assets/robe.png",
         "name": "robe"
+    },
+    {
+        "image": "../assets/clown.png",
+        "name": "clown"
+    },
+    {
+        "image": "../assets/mentalist.png",
+        "name": "mentalist"
+    },
+    {
+        "image": "../assets/spewer.png",
+        "name": "spewer"
+    },
+    {
+        "image": "../assets/huntsman.png",
+        "name": "hunstsman"
     }  
 ]
