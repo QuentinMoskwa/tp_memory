@@ -4,6 +4,10 @@ body {
     min-height: 100vh;
     min-width: 100vh;
     background-color: #12181f;
+    background-image: url("https://www.memorypc.fr/media/f9/2e/72/1746174904/REPO_so_besiegt_ihr_jedes_Level_1_Monster_1.jpg?ts=1748343841" );
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
     color: white;
     font-family: Teko-Regular;
   }
