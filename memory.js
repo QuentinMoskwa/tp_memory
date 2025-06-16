@@ -32,7 +32,7 @@ function generateCards() {
         cardFront.setAttribute("data-name", card.name);
         cardFront.innerHTML = `
         <div class="recto">
-        <img class="front-image" src=${card.image} />
+        <img class="recto-image" src=${card.image} />
         </div>
         <div class="verso"></div>
         `;
